@@ -1,31 +1,207 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="stylelogin.css
-    ">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/a076d05399.js" type="95f9f801040545c8ade10f24-text/javascript"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<style>
+	*
+	{
+		box-sizing: border-box;
+	}
+	.body
+	{
+		font-family: 'Open Sans', sans-serif;
+	}
+	p.welcome{
+		font-size: 2em;
+		font-weight:100;
+	}
+	.div-1
+	{
+		width: 100%;
+		height:auto;
+		padding: 5px;
+	}
+	.div-2
+	{
+		display: inline-block;
+		height: 7px;
+		width: 7px;
+	}
+	.left
+	{
+		width: 65%;
+		height: 900px;
+		background-color: black;
+		float: left;
+		padding: 18px;
+		font-family:'arial',sans-serif;
+	}
+	.right
+	{
+		width: 35%;
+		height: 900px;
+		background-color: #00ba78;
+		float: left;
+		font-family:'Open Sans',sans-serif;
+	}
+	img
+	{
+		float: left;
+		margin-left: 10px;
+	}
+	.cfix
+	{
+		overflow: auto;
+		clear: left;
+		margin-top: 15px;
+		margin-left: 15px;
+	}
+	.clear::after
+	{
+		clear: both;
+		display: table;
+		content: " "
+	}
+	p
+	{
+		color: white;
+	}
+	.content
+	{
+		margin-top: 80px;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	.register
+	{
+		background-color: #00ba78;
+		color: white;
+		border: none;
+		font-size: .65em;
+		border-radius: 3px;
+		cursor: pointer;
+		padding: 6px 15px;
+		text-align: center;
+	}
+	.form
+	{
+		margin-top: 225px;
+		margin-left: 100px;
+	}
+	input[type="text"], textarea {  /*changing proprty of text attr*/
+		background-color : #00ba78; 
+	}
+	input[type=email], input[type=password]
+	{
+		background-color: #00ba78;
+		border: none;
+		border-bottom: 2px solid white;
+		color: white;
+		margin-top: 24px;
+		outline: none;
+		width: 300px;
+	}
+	.submit
+	{
+		border: none;
+		color: #00ba78;
+		padding: 3px 11px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer;
+		background-color: white;
+		margin-top: 17px;
+		border-radius: 3px;
+	}
+	ul
+	{
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	li
+	{
+		float: left;
+	}
+	li a
+	{
+		display: inline-block;
+		color: #2B3037;
+		text-decoration: none;
+		text-align: center;
+		padding: 10px 15px;
+		font-size: .75em;
+	}
+	.link
+	{
+		position: absolute;
+		height: 80px;
+		bottom: 15px;
+	}
+	input::placeholder /*change color of place holder*/
+	{
+		color: white;
+	}
+	.submit b{
+		font-size: 10px;
+	}
+	.submit + a{
+		color: white;
+		text-decoration: none;
+		font-size: .75em;
+	}
+	.para-1{
+		margin-top: 10px;
+		/*color: #2B3037;*/
+		margin-right: 20px; 
+		font-size: .75em;
+		line-height: 1.5;
+	}
+</style>
 </head>
 <body>
-
-<h1 class="top-header">Welcome</h1>
-<p class="top-text">Hello world!</p>
-<p class="topcontent">Are you learning CSS?</p>
-
+<div class="div-1">
+	<div class="div-2" style="background-color: red;border-radius: 50%; border: none;"></div>
+	<div class="div-2" style="background-color: yellow;border-radius: 50%;border: none;"></div>
+	<div class="div-2" style="background-color: green;border-radius: 50%;border: none;"></button>
+	</div>
+	<div class="clear">
+		<div class="left">
+			<div class="cfix"><img src="https://cosy.erc.edu/assets/my-erc/img/logo-white.png" width="150px" height="50px">
+			</div>
+			<div class="content">
+				<p class="welcome">Welcome</p>
+				<p style="color: #2B3037;font-size: 1.1em;">Register for an ERC account here</p><br>
+				<p class="para-1" style="color: #2B3037;">Nations of life-savers, communities with the readiness to respond to cardiac arrest. This is the vision of the future. The goal of the ERC. To achieve this, we need training and education. To know what to teach we need guidelines. To have good evidence-based guidelines, we need science. And for all this we need motivated people ready to change hearts and minds. Ready to research, educate and act.For all of these people the ERC has built this new website to support all our activities. I hope you find this site useful and attractive. Let’s together step in to a new era! A warm welcome.</p><br>
+				<button type="button" class="register"><a>REGISTER HERE</a></button>
+			</div>
+			<div class="link">
+				<ul>
+					<li><a href="#13">Choose language <i class="fa fa-angle-down" aria-hidden="true"></i></a> </li>
+					<li><a href="#10"> help center</a></li>
+					<li><a href="#11"> erc website</a></li>
+					<li><a href="#12">erc webshop</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="right">
+			<div class="form">
+				<p><strong>Or login to you account</strong> </p>
+				<form>
+					<input type="email" name="email" placeholder="Your email"><br>
+					<input type="password" name="pass" placeholder="Password">
+				</form>
+				<button class="submit"><b>LOGIN</b></button>
+				<a href="#7">forgot password?</a>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   </html>
